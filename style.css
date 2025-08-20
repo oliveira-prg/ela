@@ -1,0 +1,122 @@
+ <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap');
+        body {
+            background: linear-gradient(120deg, #f8fafc 0%, #ffe0e9 100%);
+            font-family: 'Montserrat', Arial, sans-serif;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .container {
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(215,38,96,0.10), 0 1.5px 8px rgba(30,185,84,0.08);
+            margin: 48px auto;
+            max-width: 540px;
+            padding: 40px 32px 32px 32px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+        .container:hover {
+            box-shadow: 0 12px 48px rgba(215,38,96,0.18), 0 2px 12px rgba(30,185,84,0.10);
+        }
+        h1 {
+            color: #d72660;
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #1db954;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.4em;
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+        p {
+            color: #6d214f;
+            font-size: 1.08em;
+            line-height: 1.7;
+        }
+        #poema {
+            background: #f7fafd;
+            border: 2px solid #1db954;
+            box-shadow: 0 2px 12px rgba(30,185,84,0.08);
+            color: #6d214f;
+            font-size: 1.13em;
+            transition: all 0.4s;
+            margin-top: 10px;
+        }
+        button {
+            background: linear-gradient(90deg, #1db954 0%, #d72660 100%);
+            color: #fff;
+            border: none;
+            border-radius: 32px;
+            padding: 12px 32px;
+            font-size: 1.08em;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 8px rgba(215,38,96,0.12);
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #d72660 0%, #1db954 100%);
+            transform: scale(1.05);
+        }
+        /* Corações flutuantes modernos */
+        .heart {
+            position: fixed;
+            left: 50%;
+            font-size: var(--size, 2em);
+            color: var(--color, #d72660);
+            pointer-events: none;
+            animation: floatHeart var(--duration, 6s) linear forwards;
+            z-index: 9999;
+            filter: drop-shadow(0 2px 8px #d72660);
+            will-change: transform, opacity;
+        }
+        @keyframes floatHeart {
+            0% {
+                transform: translateX(0) translateY(0) scale(1);
+                opacity: 1;
+            }
+            60% {
+                opacity: 0.9;
+            }
+            100% {
+                transform: translateX(var(--x)) translateY(-100vh) scale(var(--scale,1.3));
+                opacity: 0;
+            }
+        }
+        .destaque-animado {
+            margin-top: 32px;
+        }
+        .shine {
+            display: inline-block;
+            font-size: 1.25em;
+            color: #d72660;
+            font-weight: bold;
+            letter-spacing: 1px;
+            background: linear-gradient(90deg, #ffb6b9 0%, #fff0f6 100%);
+            border-radius: 18px;
+            padding: 12px 28px;
+            box-shadow: 0 2px 12px rgba(215,38,96,0.10);
+            animation: shineEffect 2.5s infinite linear;
+        }
+        @keyframes shineEffect {
+            0% {
+                box-shadow: 0 0 12px 2px #fff6f0, 0 2px 12px rgba(215,38,96,0.10);
+            }
+            50% {
+                box-shadow: 0 0 32px 8px #ffd6e0, 0 2px 12px rgba(215,38,96,0.10);
+            }
+            100% {
+                box-shadow: 0 0 12px 2px #fff6f0, 0 2px 12px rgba(215,38,96,0.10);
+            }
+        }
+    </style>
