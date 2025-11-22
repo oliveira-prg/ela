@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universo a Dois</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #050814;
+        color: #fff;
+        text-align: center;
+        padding: 40px 20px;
+        overflow-x: hidden;
+    }
+
+    /* fundo animado de estrelas */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://www.transparenttextures.com/patterns/stardust.png');
+        opacity: 0.25;
+        animation: starsMove 80s linear infinite;
+        pointer-events: none;
+    }
+
+    @keyframes starsMove {
+        from { transform: translateY(0); }
+        to { transform: translateY(-2000px); }
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: #ffd6ff;
+        animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    p {
+        max-width: 650px;
+        margin: 0 auto 20px auto;
+        line-height: 1.6;
+        color: #e6e6e6;
+    }
+
+    .planetas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 14px;
+        width: 220px;
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: transform .3s, box-shadow .3s;
+        animation: floatCard 5s ease-in-out infinite;
+    }
+
+    .card:hover {
+        transform: scale(1.06);
+        box-shadow: 0 0 18px rgba(255, 200, 255, 0.3);
+    }
+
+    @keyframes floatCard {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+    }
+
+    .planet {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin: 0 auto 15px auto;
+        background-size: cover;
+        background-position: center;
+        animation: spin 18s linear infinite;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .mercurio { background: #b7b7b7; }
+    .venus { background: #d6a675; }
+    .terra { background: #4ba3ff; }
+    .marte { background: #c1440e; }
+    .jupiter { background: #d9a066; }
+    .saturno { background: #ebd8a6; }
+    .urano { background: #82dff5; }
+    .netuno { background: #2e59ff; }
+
+    footer {
+        margin-top: 40px;
+        font-size: 0.9rem;
+        opacity: 0.6;
+    }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 1.9rem; }
+        .card { width: 90%; }
+    }
+</style>
+</head>
+<body>
+
+<h1>Universo a Dois</h1>
+<p>Entre estrelas, silêncio e infinitos mundos, existe um lugar onde só nós dois cabemos. <br>
+Cada planeta guarda um detalhe do que sinto por você.</p>
+
+<div class="planetas">
+    <div class="card"><div class="planet mercurio"></div><h3>Mercúrio</h3><p>Pequeno, porém intenso — como aquele primeiro olhar que mudou tudo.</p></div>
+    <div class="card"><div class="planet venus"></div><h3>Vênus</h3><p>Planeta do amor — e cada detalhe seu me lembra isso.</p></div>
+    <div class="card"><div class="planet terra"></div><h3>Terra</h3><p>O lugar onde nos encontramos — e onde quero ficar.</p></div>
+    <div class="card"><div class="planet marte"></div><h3>Marte</h3><p>Forte e vibrante — como o coração acelerado quando penso em você.</p></div>
+    <div class="card"><div class="planet jupiter"></div><h3>Júpiter</h3><p>Gigante — como a vontade de te abraçar todos os dias.</p></div>
+    <div class="card"><div class="planet saturno"></div><h3>Saturno</h3><p>Com anéis delicados — como o cuidado que quero ter com você.</p></div>
+    <div class="card"><div class="planet urano"></div><h3>Urano</h3><p>Diferente — como o jeito único que você ilumina meu mundo.</p></div>
+    <div class="card"><div class="planet netuno"></div><h3>Netuno</h3><p>Profundo — como tudo o que eu ainda quero viver ao seu lado.</p></div>
+</div>
+
+<footer>Feito para alguém especial (você) hehe</footer>
+
+</body>
+</html>
