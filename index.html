@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Você ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
 
+  <style>
+    :root {
+      --roxo-escuro: #4b0082;
+      --roxo-medio: #7d26cd;
+      --lilás: #c8a2c8;
+      --lilás-claro: #e6d6f2;
+      --rosa-pálido: #f5e1fd;
+      --texto-escuro: #3a1a5c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--roxo-escuro) 0%, var(--roxo-medio) 50%, var(--lilás) 100%);
+      color: var(--lilás-claro);
+      font-family: 'Caveat', cursive;
+      background-attachment: fixed;
+      font-size: 1.35rem;          /* Aumentei um pouco pra ficar mais confortável de ler */
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 70px 20px 50px;
+      background: linear-gradient(to bottom, rgba(75, 0, 130, 0.45), transparent);
+    }
+
+    h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 5.5rem;
+      color: #fff;
+      text-shadow: 0 0 25px rgba(200, 162, 200, 0.95);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 1.9rem;
+      color: var(--lilás-claro);
+      opacity: 0.92;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px 70px;
+    }
+
+    section {
+      margin: 70px 0;
+      padding: 45px;
+      background: rgba(255, 255, 255, 0.09);
+      border-radius: 28px;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(200, 162, 200, 0.3);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      font-family: 'Sacramento', cursive;
+      font-size: 3.8rem;
+      color: #fff9;
+      margin-bottom: 28px;
+      text-align: center;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.55);
+    }
+
+    .mensagem {
+      font-size: 1.55rem;
+      line-height: 1.8;
+      text-align: center;
+      color: var(--rosa-pálido);
+    }
+
+    .poema {
+      font-size: 1.48rem;
+      line-height: 2.0;
+      text-align: center;
+      white-space: pre-line;
+      color: #f0e6ff;
+      font-style: italic;
+    }
+
+    .musica {
+      text-align: center;
+    }
+
+    .btn-musica {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 18px 50px;
+      font-size: 1.6rem;
+      font-family: 'Caveat', cursive;
+      color: white;
+      background: linear-gradient(45deg, #9b59b6, #c39be6);
+      border-radius: 60px;
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.35);
+      transition: all 0.4s ease;
+      box-shadow: 0 8px 25px rgba(155,89,182,0.6);
+    }
+
+    .btn-musica:hover {
+      transform: translateY(-5px) scale(1.07);
+      box-shadow: 0 15px 35px rgba(155,89,182,0.8);
+      background: linear-gradient(45deg, #c39be6, #9b59b6);
+    }
+
+    .heart {
+      color: #ff99cc;
+      font-size: 1.8rem;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Oi, meu amor ♡</h1>
+    <div class="subtitle">fiz com o coração na ponta dos dedos só pra você</div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Mensagem especial</h2>
+      <p class="mensagem">
+        Você já reparou que toda vez que penso em você<br>
+        o mundo fica mais leve, mais cor-de-lilás?<br><br>
+        
+        É como se meu peito tivesse aprendido uma nova maneira<br>
+        de bater só pra guardar seu nome em segurança.<br><br>
+        
+        se a vida significa ser feliz ao teu lado, então quero viver esse lado da vida.<br>
+      </p>
+    </section>
+
+    <section>
+      <h2>Um pedacinho de poema pra você</h2>
+      <div class="poema">
+        Teu olhar é violeta que não explica  
+        cai devagar em mim como chuva de pétalas  
+        e eu me desmancho sem querer resistência  
+        
+        Teu nome mora na curva da minha boca  
+        antes mesmo de eu decidir falar  
+        e quando você sorri, amor,  
+        o universo dá uma pausa pra aplaudir
+      </div>
+    </section>
+
+    <section>
+      <h2>Uma música que não sai da minha cabeça quando penso em você</h2>
+      <div class="musica">
+        <a href="https://open.spotify.com/intl-pt/track/5c12DVTlsyFbxmysLw0Vll?si=8c9ef0efbf994f47" 
+           target="_blank" 
+           class="btn-musica">
+           Escutar agora ♡
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
